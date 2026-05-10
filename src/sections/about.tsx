@@ -55,6 +55,7 @@ export default function About() {
       id="about"
       className="min-h-screen flex flex-col items-center px-6 py-20"
     >
+       <div className="w-full max-w-4xl mx-auto"> 
         {/* TITLE */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-10">
           About Me
@@ -94,9 +95,9 @@ export default function About() {
         </Card>
 
         {/* CARD 2 Skills */}
-        <Card className="mt-10 shadow-lg ">
+        <Card className="mt-5 shadow-lg ">
             <CardHeader>
-            <CardTitle className="mt-20 text-center md:text-left">
+            <CardTitle className="mt-15 text-center md:text-left">
                 Skills
             </CardTitle>
             </CardHeader>
@@ -156,7 +157,8 @@ export default function About() {
             </ul>
           </CardContent>
         </Card>
-    </div>      
+    </div>  
+    </div>    
     </section>
   );
 }

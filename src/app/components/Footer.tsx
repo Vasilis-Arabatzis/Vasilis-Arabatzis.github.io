@@ -22,9 +22,9 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/vasileios-arampatzis-a76254279" target="_blank">
             <Image src={linkedinIcon} alt="LinkedIn" width={24} height={24} />
           </a>
-          <a href="mailto:arabatzis.vasileios@gmail.com?subject=Portfolio Contact" target="_blank" rel="noopener noreferrer">
-            <Mail className="w-5 h-5 hover:scale-110 transition" />
-          </a>
+          <a href="mailto:arabatzis.vasileios@gmail.com?subject=Portfolio Contact">
+              <Mail className="w-8 h-8 hover:scale-110 transition duration-300" />
+            </a>
         </div>
 
       </div>

@@ -18,6 +18,10 @@ export default function Navbar() {
     { name: "Contact", href: "/contact" },
   ];
 
+  function handleDownload(arg0: string): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <nav className="w-full fixed top-0 z-50 backdrop-blur-md bg-background/70 border-b">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
@@ -74,21 +78,24 @@ export default function Navbar() {
 
           {/* Email */}
           <a
-            href="mailto:arabatzis.vasileios@gmail.com"
-            className="p-2 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition"
+            href="mailto:arabatzis.vasileios@gmail.com?subject=Portfolio%20Contact"
+            className="inline-flex"
           >
-            <Mail className="w-5 h-5" />
+            <Mail className="w-8 h-8 hover:scale-110 transition duration-300 cursor-pointer" />
           </a>
-
+          
           {/* LR Button */}
-          <Button className="ml-2 rounded-full px-4">
-            LR
+          <Button asChild>
+            <a href="/lr.pdf" target="_blank" rel="noopener noreferrer">
+              LR
+            </a>
           </Button>
 
-
           {/* CV Button */}
-          <Button className="ml-2 rounded-full px-4">
-            CV
+          <Button asChild>
+            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+              CV
+            </a>
           </Button>
 
         </div>

@@ -2,11 +2,13 @@
   "name": "my-cv",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Vasilis-Arabatzis.github.io/my-cv",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "predeploy": "npm run build",
     "deploy": "next build && powershell -Command \"New-Item -ItemType File -Path out/.nojekyll -Force\" && gh-pages -d out"
   },
   "dependencies": {

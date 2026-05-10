@@ -2,10 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {Mail} from "lucide-react";
-import githubIcon from "../assets/github.ico";
-import linkedinIcon from "../assets/linkedin.ico";
-import Link from "next/link";
 
 
 export default function Contact() {

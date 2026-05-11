@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="text-center md:text-left">
           {/* SMALL TEXT */}
           <p className="text-primary text-lg mb-2">
-            Hello, I&apos;
+            Hello, I'm
           </p>
 
           {/* NAME */}
